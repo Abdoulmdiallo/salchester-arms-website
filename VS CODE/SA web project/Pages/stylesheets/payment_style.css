@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the background container behind other content */
+}
+
+.details {
+    background-color: rgba(233, 233, 233, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    width: 100%;
+    z-index: 1; /* Adjust z-index to bring it above the background container */
+}
+
+.background-image {
+    background-image: url("imagestyle/pexels-curtis-adams-3773575.jpg"); 
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px); 
+    
+}

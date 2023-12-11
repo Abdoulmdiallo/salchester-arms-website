@@ -1,0 +1,38 @@
+ /* Add the slideshow styles here */
+ #slideshow-container {
+    max-width: 500px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden; /* Hide overflow to prevent multiple images from showing */
+}
+
+.mySlides {
+    display: none;
+    width: 100%; /* Set the width to 100% for responsiveness */
+}
+
+.mySlides img {
+    width: 100%; /* Make sure the image takes 100% of its container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0px;
+}
+
+.next {
+    right: 0px;
+}

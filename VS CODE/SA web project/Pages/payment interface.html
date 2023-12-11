@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="stylesheets/payment_style.css">
+    <link rel="icon" href="images/Salcheterlogo.png.jpg">
+    <title>payment</title>
+</head>
+
+<body>
+    <div class="image-container">
+        <div class="background-image"></div>
+    </div>
+
+    <main>
+        <div class="details">
+            <form action="index.html">
+
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" placeholder="exampleuser123" minlength="6" maxlength="15" name="username" required><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" placeholder="password" id="password" minlength="6" name="password"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" placeholder="examplemail@gmail.com" name="email"><br>
+
+                <label for="birthday">Birthday:</label><br>
+                <input type="date" id="birthday" name="birthday">
+
+                <div class="Gender">
+                    <br>
+                    <label for="Title" aria-required="true">Title:</label>
+
+                    <label for="Mr.">Mr.</label>
+                    <input type="radio" id="Mr." value="Mr." name="Title">
+
+                    <label for="Ms.">Ms.</label>
+                    <input type="radio" id="Ms." value="Ms." name="Title">
+
+                    <label for="Dr.">Dr.</label>
+                    <input type="radio" id="Dr." value="Dr." name="Title">
+
+                    <br><label for="Payment">Payment:</label>
+
+                    <br><select name="payment options" id="Payment">
+                        <option value="Visa">Visa</option>
+                        <option value="Mastercard">Mastercard</option>
+                        <option value="Giftcard">Giftcard</option>
+                    </select>
+
+                    <br>
+                    <input type="submit"><br>
+                    <input type="reset">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

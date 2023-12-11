@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: hsl(0, 1%, 18%);
+    padding: 10px;
+}
+
+.logo {
+    width: 70px;
+    height: 50px;
+    margin-right: -10px;
+}
+
+.Navigation_bar {
+    flex-grow: 1;
+}
+
+.Navigation_bar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 10px;
+    padding: 0px;
+}
+
+.Navigation_bar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.Navigation_bar a:hover {
+    background-color: hsl(0, 0%, 10%);
+}
+
+.main-content 
+    /* Add styles for your main content if needed */
+    
+
+
+main h1 {
+    font-size: 50px;
+}

@@ -1,0 +1,42 @@
+/* Image Gallery Styles */
+body{ font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;}
+
+.image-gallery {
+    margin-top: 20px;
+    text-align: center; /* Center the content */
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the images */
+    margin-top: 20px; /* Add margin at the top */
+}
+
+.gallery-container img {
+    width: 48%; /* Adjust the width as needed based on your design */
+    margin-bottom: 20px; /* Increase the margin for a bit more spacing */
+}
+
+/* Apply styles similar to the "About Us" section */
+.image-gallery h2 {
+    font-size: 28px;
+    color: #333; /* Adjust the color as needed */
+    margin-bottom: 10px;
+}
+
+.image-gallery p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666; /* Adjust the color as needed */
+    margin-bottom: 20px;
+}
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+}

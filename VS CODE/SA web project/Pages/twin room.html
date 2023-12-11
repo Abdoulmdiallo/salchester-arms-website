@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Twin room</title>
+        <link rel="stylesheet" href="stylesheets/room options.css">
+        <link rel="stylesheet" href="stylesheets/Navigation_bar.css">
+    </head>
+    <body>
+            <div class="header">
+                <img src="images/salchester ship logo.CErxZNmBjOwXs1M3EMoAJtlyAvhPBi9Pwy" alt="Logo" class="logo">
+                <nav class="Navigation_bar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About us.html">About us</a></li>
+                        <li><a href="leisure.html">Leisure and activities</a></li>
+                        <li><a href="room options.html">Room Options</a></li>
+                        <li><a href="Support.html">Support</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        <div id="slideshow-container">
+            <div class="mySlides">
+                <img src="images/hotel picture.jpg">
+            </div>
+            <div class="mySlides">
+                <img src="images/pexels-curtis-adams-3773575.jpg" alt="">
+                <img src="images/room images/single room 2.jpg" alt="">
+                <img src="images/room images/single room 3.jpg" alt="">
+            </div>
+            <!-- Add more slides as needed -->
+            <!-- Example:
+            <div class="mySlides">
+                <img src="images/second_image.jpg" alt="" style="width: 500px; height: 500px;">
+            </div>
+            -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+       
+       
+       <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+        
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+        
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+            }
+        </script>
+    </body>
+</html>

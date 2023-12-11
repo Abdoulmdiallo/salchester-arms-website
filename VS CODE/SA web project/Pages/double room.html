@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Double room</title>
+        <link rel="stylesheet" href="stylesheets/room options.css">
+    </head>
+    <body>
+        <div id="slideshow-container">
+            <div class="mySlides"> <img src="images/hotel picture.jpg"> </div>
+            <div class="mySlides"> <img src="images/room images/Double room 1.jpg" alt=""> </div>
+            <div class="mySlides"> <img src="images/room images/double room 2.jpg" alt=""> </div>
+            <div class="mySlides"> <img src="images/room images/double room 3.jpg" alt=""> </div> 
+            <div class="mySlides"> <img src="images/room images/double room 4.jpg" alt=""> </div>   
+            <div class="mySlides"> <img src="images/room images/double room 5.jpg" alt=""> </div>
+            <!-- Add more slides as needed -->
+            <!-- Example:
+            <div class="mySlides">
+                <img src="images/second_image.jpg" alt="" style="width: 500px; height: 500px;">
+            </div>
+            -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+       
+       
+       <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+        
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+        
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+            }
+        </script>
+    </body>
+</html>

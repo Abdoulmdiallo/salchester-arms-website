@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="stylesheets/login_style.css">
+    <link rel="icon" href="images/Sa.png">
+    <title>Login</title>
+</head>
+
+<body>
+    <h1>Salchester Arms Login</h1>
+    <div class="container">
+        <div class="background-image"></div>
+
+        <main>
+            <div class="details">
+                <form action="index.html">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="exampleuser123" minlength="6" maxlength="15" name="username" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" placeholder="password" id="password" minlength="6" name="password">
+
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="examplemail@gmail.com" name="email">
+
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday">
+
+                    <div class="gender">
+                        <label for="title" aria-required="true">Title:</label>
+
+                        <label for="Mr.">Mr.</label>
+                        <input type="radio" id="Mr." value="Mr." name="title">
+
+                        <label for="Ms.">Ms.</label>
+                        <input type="radio" id="Ms." value="Ms." name="title">
+
+                        <label for="Dr.">Dr.</label>
+                        <input type="radio" id="Dr." value="Dr." name="title">
+
+                        <br>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    
+</body>
+
+</html>
